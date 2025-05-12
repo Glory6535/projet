@@ -1,0 +1,170 @@
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire d'inscription</title>
+    <style>
+        /* Ajoutez votre CSS ici ou dans un fichier style.css */
+        label { display: block; margin-bottom: 5px; font-weight: bold; }
+        input[type="text"], input[type="email"], input[type="tel"], textarea { width: 100%; padding: 8px; margin-bottom: 10px; box-sizing: border-box; }
+    </style>
+</head>
+<body>
+
+    <form action="#" method="post">  <!-- Remplacez # par l'URL de votre script de traitement -->
+
+        <!-- SECTION TUTEUR -->
+        <h3>INFORMATIONS SUR LE TUTEUR À MAROUA</h3>
+        <table>
+            <tr>
+                <td><label for="tuteur">Nom du tuteur à Maroua:</label></td>
+                <td><input type="text" id="tuteur" name="tuteur"></td>
+            </tr>
+            <tr>
+                <td><label for="adresse_tuteur">Adresse et téléphone:</label></td>
+                <td><input type="text" id="adresse_tuteur" name="adresse_tuteur"></td>
+            </tr>
+        </table>
+
+        <!-- SECTION DIPLÔME -->
+        <h3>INFORMATIONS SUR LE DIPLÔME</h3>
+        <table>
+            <tr>
+                <td><label for="diplome">Diplôme d'entrée:</label></td>
+                <td><input type="text" id="diplome" name="diplome"></td>
+            </tr>
+            <tr>
+                <td><label for="serie">Série:</label></td>
+                <td><input type="text" id="serie" name="serie"></td>
+            </tr>
+            <tr>
+                <td><label for="annee_obtention">Année d'obtention:</label></td>
+                <td><input type="number" id="annee_obtention" name="annee_obtention" min="1900" max="2024"></td>
+            </tr>
+            <tr>
+                <td><label for="mention">Mention:</label></td>
+                <td><input type="text" id="mention" name="mention"></td>
+            </tr>
+            <tr>
+                <td><label for="lieu_obtention">Lieu d'obtention:</label></td>
+                <td><input type="text" id="lieu_obtention" name="lieu_obtention"></td>
+            </tr>
+            <tr>
+                <td><label for="profession">Profession:</label></td>
+                <td><input type="text" id="profession" name="profession"></td>
+            </tr>
+        </table>
+        </html>
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Formulaire d'inscription</title>
+            <style>
+                /* Ajoutez votre CSS ici ou dans un fichier style.css */
+                body {
+                    font-family: Arial, sans-serif;
+                }
+        
+                table {
+                    width: 100%;
+                    border-collapse: collapse;
+                    margin-bottom: 20px;
+                }
+        
+                th, td {
+                    border: 1px solid #ddd;
+                    padding: 8px;
+                    text-align: left;
+                }
+        
+                th {
+                    background-color: #f2f2f2;
+                }
+        
+                label {
+                    display: block;
+                    margin-bottom: 5px;
+                    font-weight: bold;
+                }
+        
+                input[type="text"],
+                input[type="email"],
+                input[type="tel"],
+                input[type="number"],
+                textarea {
+                    width: 100%;
+                    padding: 8px;
+                    margin-bottom: 10px;
+                    box-sizing: border-box;
+                    border: 1px solid #ccc;
+                    border-radius: 4px;
+                }
+        
+                .actions {
+                    text-align: center;
+                }
+        
+                .submit-btn, .print-btn {
+                    padding: 10px 20px;
+                    background-color: #4CAF50;
+                    color: white;
+                    border: none;
+                    cursor: pointer;
+                    border-radius: 4px;
+                    font-size: 16px;
+                }
+        
+                .print-btn {
+                    background-color: #008CBA;
+                    margin-left: 10px;
+                }
+            </style>
+        </head>
+        <body>
+        
+            <form action="#" method="post">  <!-- Remplacez # par l'URL de votre script de traitement -->
+        
+                <!-- SECTION TUTEUR -->
+                <h3>INFORMATIONS SUR LE TUTEUR À MAROUA</h3>
+                <table>
+                    <tr>
+                        <th><label for="tuteur">Nom du tuteur à Maroua:</label></th>
+                        <td><input type="text" id="tuteur" name="tuteur"></td>
+                    </tr>
+                    <tr>
+                        <th><label for="adresse_tuteur">Adresse et téléphone:</label></th>
+                        <td><input type="text" id="adresse_tuteur" name="adresse_tuteur"></td>
+                    </tr>
+                </table>
+        
+                <!-- SECTION DIPLÔME -->
+                <h3>INFORMATIONS SUR LE DIPLÔME</h3>
+                <table>
+                    <tr>
+                        <th><label for="diplome">Diplôme d'entrée:</label></th>
+                        <td><input type="text" id="diplome" name="diplome" required></td>
+                    </tr>
+                    <tr>
+         
+        <!-- SECTION CONTACT & SIGNATURE -->
+        <h3>CONTACT ET SIGNATURE</h3>
+        <table>
+            <tr>
+                <td><label for="signature">Signature du Candidat:</label></td>
+                <td><textarea id="signature" name="signature" rows="2"></textarea></td>
+            </tr>
+            <tr>
+                <td><label for="contact">Adresse email et téléphone:</label></td>
+                <td><input type="email" id="contact" name="contact" required></td>
+            </tr>
+        </table>
+
+        <!-- BOUTONS ACTIONS -->
+        <div class="actions">
+            <button type="submit" class="submit-btn">Soumettre</button>
+            
+        </div>
+
+    </form>
+
+</body>

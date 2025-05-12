@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire de CV</title>
+    <style>
+        /* Style de base pour une meilleure présentation. À personnaliser davantage avec du CSS externe ou embarqué. */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        fieldset {
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            background-color: #fff;
+        }
+
+        legend {
+            font-weight: bold;
+            padding: 5px;
+            background-color: #eee;
+            border: 1px solid #ccc;
+        }
+
+        label {
+            display: inline-block;
+            width: 150px; /* Ajuster la largeur selon vos besoins */
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        input[type="date"],
+        input[type="tel"],
+        input[type="email"],
+        input[type="number"],
+        textarea,
+        select {
+            width: 300px; /* Ajuster la largeur selon vos besoins */
+            padding: 5px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            box-sizing: border-box; /* Important pour que le padding n'affecte pas la largeur totale */
+        }
+
+        textarea {
+            height: 80px;
+        }
+
+        br {
+            clear: both; /* Pour éviter que les éléments flottants (label/input) ne se chevauchent */
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            float: right; /* Affiche le bouton à droite */
+        }
+
+        input[type="submit"]:hover {
+            background-color: #3e8e41;
+        }
+
+         /*  Style pour le select niveau langue */
+        select {
+            width: 150px; /* Ajuster la largeur selon vos besoins */
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1>Créer votre CV</h1>
+
+    <form action="#" method="post">
+
+        <!-- Informations Personnelles -->
+        <fieldset>
+            <legend>Informations Personnelles</legend>
+
+            <label for="nom">Nom :</label>
+            <input type="text" id="nom" name="nom" required><br>
+            <label for="prenom">Prénom :</label>
+            <input type="text" id="prenom" name="prenom" required><br>
+
+            <label for="date_naissance">Date de naissance :</label>
+            <input type="date" id="date_naissance" name="date_naissance"><br>
+
+            <label for="adresse">Adresse :</label>
+            <input type="text" id="adresse" name="adresse"><br>
+
+            <label for="telephone">Téléphone :</label>
+            <input type="tel" id="telephone" name="telephone"><br>
+
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email"><br>
+        </fieldset>
+
+        <!-- Objectif -->
+        <fieldset>
+            <legend>Objectif Professionnel</legend>
+            <textarea name="objectif" rows="4" cols="50" placeholder="Décrivez brièvement vos ambitions professionnelles..."></textarea><br>
+        </fieldset>
+
+        <!-- Éducation -->
+        <fieldset>
+            <legend>Éducation</legend>
+            <label for="diplome">Diplôme :</label>
+            <input type="text" id="diplome" name="diplome"><br>
+
+            <label for="etablissement">Établissement :</label>
+            <input type="text" id="etablissement" name="etablissement"><br>
+
+            <label for="annee">Année :</label>
+            <input type="number" id="annee" name="annee" min="1900" max="2100"><br>
+        </fieldset>
+
+        <!-- Expérience Professionnelle -->
+        <fieldset>
+            <legend>Expérience Professionnelle</legend>
+
+            <label for="poste">Poste :</label>
+            <input type="text" id="poste" name="poste"><br>
+
+            <label for="entreprise">Entreprise :</label>
+            <input type="text" id="entreprise" name="entreprise"><br>
+
+            <label for="periode">Période :</label>
+            <input type="text" id="periode" name="periode"><br>
+
+            <label for="description_experience">Description :</label>
+            <textarea id="description_experience" name="description_experience" rows="4" cols="50"></textarea><br>
+        </fieldset>
+
+        <!-- Compétences -->
+        <fieldset>
+            <legend>Compétences</legend>
+            <textarea name="competences" rows="4" cols="50" placeholder="Indiquez vos compétences..."></textarea><br>
+        </fieldset>
+
+        <!-- Langues -->
+        <fieldset>
+            <legend>Langues</legend>
+
+            <label for="langue1">Langue :</label>
+            <input type="text" id="langue1" name="langue1">
+            Niveau :
+            <select name="niveau1" id="niveau1">
+                <option value="">Sélectionner</option>
+                <option value="debutant">Débutant</option>
+                <option value="intermediaire">Intermédiaire</option>
+                <option value="avance">Avancé</option>
+                <option value="courant">Courant</option>
+            </select><br>
+
+            <label for="langue2">Langue :</label>
+            <input type="text" id="langue2" name="langue2">
+            Niveau :
+            <select name="niveau2" id="niveau2">
+                <option value="">Sélectionner</option>
+                <option value="debutant">Débutant</option>
+                <option value="intermediaire">Intermédiaire</option>
+                <option value="avance">Avancé</option>
+                <option value="courant">Courant</option>
+            </select><br>
+        </fieldset>
+
+        <!-- Projets -->
+        <fieldset>
+            <legend>Projets</legend>
+            <textarea name="projets" rows="4" cols="50" placeholder="Décrivez vos projets personnels ou académiques..."></textarea><br>
+        </fieldset>
+
+        <!-- Références -->
+        <fieldset>
